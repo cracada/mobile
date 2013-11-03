@@ -1,10 +1,9 @@
 <!DOCTYPE html>
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<meta charset="UTF-8">
-<title>KUKA MOBILE NAV</title>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta charset="utf-8">
+<title>KUKA Mobile Navigator</title>
 <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
 <style>
-
 body, div, p, ul, dl, dt, dd, img, section, footer, nav{margin: 0;padding: 0; }
 body {font: 14px/1.5 "\5FAE\8F6F\96C5\9ED1",Helvetica;color: #333;  -webkit-text-size-adjust: none;  background-color: #eff4f6;-webkit-backface-visibility: hidden; }
 body{font-size: 18px;}
@@ -29,13 +28,21 @@ li {list-style-type: none; }
 
 .p{height:2px;}
 .s {height:36px;font-size:14.5px;color:#666;background: #d9dfef;padding:3px 0;border: 1px solid #ccc;  width: 100%;-webkit-appearance: none;-moz-box-sizing:border-box;-webkit-box-sizing: border-box;vertical-align: middle;}
+
+.search_wrap{position:relative;z-index:8;width:100%;height:39px;}
+.search_inner{position:absolute;right:44px;left:0;top:0;height:39px;overflow:hidden;border:1px solid #b7b7b7;background-color:#fff}
+.search_inner .inp{display:block;width:100%;padding:11px 35px 11px 18px;font-size:22px;line-height:25px;border:0 none;-webkit-appearance:none;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;background-color:#fff;-webkit-tap-highlight-color:rgba(255,0,0,0);vertical-align:middle;box-shadow:none;overflow:hidden;}
+.search_wrap .btn{position:absolute;right:0;width:44px;height:41px;padding:0;font-size:0;line-height:51px;text-align:center;border:1px solid #2b98ed;background: #2b98ed url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAApCAYAAABOScuyAAACqElEQVRYR+2WT0gUURzHHaHCiJAgiDosWmx/oOhgUmB5tHMrBIGQdegSWEER1skIDIL+nDp0EA8eVCyIMrpE5SkKi4KCUCTCCLQgSuwPrp+vvGBYtn3z5o3LLsyDD7O77/eb32d/82bmBTVVNoIq861JhZf7iqUdTjtc0IF0SVT8ksjn85uR3Aeb4C9MwNMgCL4uh3zsJYHoXoR6obWI2B9+G4RuxD8mKe4sjKhyeuAC6LPknsMkrITdsNVIfud4BOn7SUnHEe6m+GUj0CdxhKbDQvypZr7fAF2F33CQmMdJSDsJI9Ki9Wk624XEzf9JEKtuD0AO9IeyxP/0lXYVfkLBA9BH8U5bcaRXE/MatsB5cq7YcmzzkYUpnuFkU7AAGYp/sp1c8+R1cOiHN+TsipJTKsZFuJ0TDcELCu+JWhjhtcR+g1pYR64+xx4uwqeocg0GKXrYpSLSn4nfANvJfe+SWxjrInyC5Ftwh6KHXIoirK7Www5y37nk+gi3kfwQpijaELUosrrhPoCe1/XkzkXNLRbn0uE6TjADuvNbKazHm3UgfImgi/CIHP1prxFZWFUofpvDcRiHFlu3iM8S9xLWQI74ES9bkl2FN5LzCtbDPdBr90cxCWS38bteyY1m/gyxumm9hpOw6bI2O6OgJaKNjfYVd5GZNfPaRxyFk6azYcHTxF33MXYWNlJNHIdBL5N/Q51eAassQl7SsYSNtDqsR90x2BmS1NNgDLTPULe1BS0csaVjC4cNzJ5B63sevnDZJb00mDvHodgeIpZ0IsKWJZCodFmEk+x02YRLSOeZ04vome1Kab6swiWkzyJ8tSKFQ9J6eqhhv6AJ4bcVK2yk93PUvvqBy5az7EsiShdLxaTCvh205acdtnXIdz7tsG8HbflV1+FFKjnRKuegZFAAAAAASUVORK5CYII=) no-repeat;z-index:2;}
+::-webkit-input-placeholder {color:#ccc;font-size:14.5px;font-style:italic;}
 </style>
 <body>
-<!--container-->
-
 <div class="container">
-<form action="http://m.baidu.com/s" method="get">
-<div><input class="s" type="text" name="word"  value="Search Keywords" onfocus="if(value=='Search Keywords') {value=''}" onblur="if (value=='') {value='Search Keywords'}"/></div></form>
+<div class="search_wrap">
+<form action="http://m.baidu.com/s" method="get" target="_blank">
+<div class="search_inner"><input type="search" placeholder="Search..." value="" autocomplete="off" autocorrect="off" maxlength="64" name="word" class="inp"></div>
+<button class="btn" type="submit"></button>
+</form>
+</div>
 <div class="p"></div>
   <section class="mod_box">
     <div class="site_nav">
@@ -43,12 +50,12 @@ li {list-style-type: none; }
 	  <li><a href="http://www.crsay.com" target="_blank">KUKA</a></li>
 	  <li><a href="http://bbs.wuyou.com/" target="_blank">无忧</a></li>
 	  <li><a href="http://bbs.weiphone.com/forum.php?mod=forumdisplay&fid=240&mobile=2" target="_blank">威锋</a></li>
-	  <li><a href="http://m.baidu.com/" target="_blank">金蝶</a></li>
+	  <li><a href="http://bbs.feidee.com/" target="_blank">金蝶</a></li>
 
 	  <li><a href="http://wapbaike.baidu.com/" target="_blank">百科</a></li>
  	  <li><a href="http://192.168.8.254/" target="_blank">路由</a></li>
 	  <li><a href="http://www.guomao96.com/" target="_blank">国贸</a></li>
-	  <li><a href="http://html5.mail.10086.cn/" target="_blank">139邮箱</a></li>
+	  <li><a href="m2.html" target="_self">更多</a></li>
 
 	</ul>
     </div>
@@ -60,22 +67,18 @@ li {list-style-type: none; }
 	<ul class="clearfix">
 	  <li><a href="http://m.google.com/" target="_blank">Google</a></li>
 	  <li><a href="http://www.google.com/gwt/n" target="_blank">GWT</a></li>
-	  <li><a href="http://m.dnspod.cn/" target="_blank">Dnspod</a></li>
+
+	  <li><a href="http://translate.google.cn/m/translate" target="_blank">翻译</a></li>
 
 	  <li><a href="http://www.nbdaili.com/" target="_blank">代理1</a></li>
 	  <li><a href="http://taobaofou.com/" target="_blank">代理2</a></li>
 	  <li><a href="http://www.shutude.com/" target="_blank">代理3</a></li>
 
-
-
- 	  <li><a href="http://m.jd.com/" target="_blank">京东</a></li>
- 	  <li><a href="http://m.taobao.com/" target="_blank">淘宝</a></li>
-	  <li><a href="http://m.kuaidi100.com/" target="_blank">快递100</a></li>
 	</ul>
     </div>
   </section>
 </div>
 
 </div>
-<footer class="footer">Copyright m.crsay.com</footer>
+<footer class="footer">Copyright m.crsay.com<br><!--#echo var="REMOTE_ADDR" --></footer>
 </body></html>
