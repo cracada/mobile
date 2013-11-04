@@ -3,15 +3,19 @@ Mobile Navigator
 
 Navigator for mobile user (personal)
 
-* list1
-* list2
-* list3
-* 
-1. list1
-2. list2
-3. list3
++ 111
++ 222
++ 333
 
+- aaa
+- bbb
+- ccc
 
-1.a1
-2.a2
-3.a3
+* 123
+* 456
+* 789
+
+1. abcd
+2. efgh
+3. ijkl
+
