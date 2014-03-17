@@ -2,10 +2,9 @@
 <!DOCTYPE html>
 <html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <meta charset="utf-8">
-<title>More...</title>
+<title>KUKA Mobile Navigator</title>
 <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
 <style>
-
 body, div, p, ul, dl, dt, dd, img, section, footer, nav{margin: 0;padding: 0; }
 body {font: 14px/1.5 "\5FAE\8F6F\96C5\9ED1",Helvetica;color: #333;  -webkit-text-size-adjust: none;  background-color: #eff4f6;-webkit-backface-visibility: hidden; }
 body{font-size: 18px;}
@@ -20,13 +19,13 @@ li {list-style-type: none; }
 .site_nav ul {overflow: hidden;width: 100%; }
 .site_nav li {float: left;width: 25%;height: 54px;border: 1px solid #e9ebee;border-width: 0 1px 1px 0;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box; }
 .site_nav a {display: block;text-align: center;height: 35px;padding: 9px 0 9px;line-height: 33px; }
-.site_nav a:hover {background-color:#2b98aa;color:#fff;}
+.site_nav a:hover {background-color:#0063dc;color:#fff;}
 
 .site_nav3 ul {overflow: hidden;width: 100%; }
 .site_nav3 li {float: left;width: 33.33%;height: 54px;border: 1px solid #e9ebee;border-width: 0 1px 1px 0;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box; }
 .site_nav3 a {display: block;text-align: center;height: 35px;padding: 9px 0 9px;line-height: 33px; }
-.site_nav3 a:hover {background-color:#2b98aa;color:#fff;}
-.footer {padding: 12px 0 40px;font-size: 12px;line-height: 24px;margin:auto auto;text-align:center;color:#ccc; }
+.site_nav3 a:hover {background-color:#0063dc;color:#fff;}
+.footer {padding: 12px 0 6px 0;font-size: 12px;line-height: 24px;margin:auto auto;text-align:center;color:#ccc; }
 
 .p{height:2px;}
 .s {height:36px;font-size:14.5px;color:#666;background: #d9dfef;padding:3px 0;border: 1px solid #ccc;  width: 100%;-webkit-appearance: none;-moz-box-sizing:border-box;-webkit-box-sizing: border-box;vertical-align: middle;}
@@ -34,77 +33,69 @@ li {list-style-type: none; }
 .search_wrap{position:relative;z-index:8;width:100%;height:39px;}
 .search_inner{position:absolute;right:44px;left:0;top:0;height:39px;overflow:hidden;border:1px solid #b7b7b7;background-color:#fff}
 .search_inner .inp{display:block;width:100%;padding:11px 35px 11px 18px;font-size:22px;line-height:25px;border:0 none;-webkit-appearance:none;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;background-color:#fff;-webkit-tap-highlight-color:rgba(255,0,0,0);vertical-align:middle;box-shadow:none;overflow:hidden;}
-.search_wrap .btn{position:absolute;right:0;width:44px;height:41px;padding:0;font-size:0;line-height:51px;text-align:center;border:1px solid #2b98aa;background: #2b98aa url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAApCAYAAABOScuyAAACqElEQVRYR+2WT0gUURzHHaHCiJAgiDosWmx/oOhgUmB5tHMrBIGQdegSWEER1skIDIL+nDp0EA8eVCyIMrpE5SkKi4KCUCTCCLQgSuwPrp+vvGBYtn3z5o3LLsyDD7O77/eb32d/82bmBTVVNoIq861JhZf7iqUdTjtc0IF0SVT8ksjn85uR3Aeb4C9MwNMgCL4uh3zsJYHoXoR6obWI2B9+G4RuxD8mKe4sjKhyeuAC6LPknsMkrITdsNVIfud4BOn7SUnHEe6m+GUj0CdxhKbDQvypZr7fAF2F33CQmMdJSDsJI9Ki9Wk624XEzf9JEKtuD0AO9IeyxP/0lXYVfkLBA9BH8U5bcaRXE/MatsB5cq7YcmzzkYUpnuFkU7AAGYp/sp1c8+R1cOiHN+TsipJTKsZFuJ0TDcELCu+JWhjhtcR+g1pYR64+xx4uwqeocg0GKXrYpSLSn4nfANvJfe+SWxjrInyC5Ftwh6KHXIoirK7Www5y37nk+gi3kfwQpijaELUosrrhPoCe1/XkzkXNLRbn0uE6TjADuvNbKazHm3UgfImgi/CIHP1prxFZWFUofpvDcRiHFlu3iM8S9xLWQI74ES9bkl2FN5LzCtbDPdBr90cxCWS38bteyY1m/gyxumm9hpOw6bI2O6OgJaKNjfYVd5GZNfPaRxyFk6azYcHTxF33MXYWNlJNHIdBL5N/Q51eAassQl7SsYSNtDqsR90x2BmS1NNgDLTPULe1BS0csaVjC4cNzJ5B63sevnDZJb00mDvHodgeIpZ0IsKWJZCodFmEk+x02YRLSOeZ04vome1Kab6swiWkzyJ8tSKFQ9J6eqhhv6AJ4bcVK2yk93PUvvqBy5az7EsiShdLxaTCvh205acdtnXIdz7tsG8HbflV1+FFKjnRKuegZFAAAAAASUVORK5CYII=) no-repeat;z-index:2;}
+.search_wrap .btn{position:absolute;right:0;width:44px;height:41px;padding:0;font-size:0;line-height:51px;text-align:center;border:1px solid #2b98ed;background: #2b98ed url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAApCAYAAABOScuyAAACqElEQVRYR+2WT0gUURzHHaHCiJAgiDosWmx/oOhgUmB5tHMrBIGQdegSWEER1skIDIL+nDp0EA8eVCyIMrpE5SkKi4KCUCTCCLQgSuwPrp+vvGBYtn3z5o3LLsyDD7O77/eb32d/82bmBTVVNoIq861JhZf7iqUdTjtc0IF0SVT8ksjn85uR3Aeb4C9MwNMgCL4uh3zsJYHoXoR6obWI2B9+G4RuxD8mKe4sjKhyeuAC6LPknsMkrITdsNVIfud4BOn7SUnHEe6m+GUj0CdxhKbDQvypZr7fAF2F33CQmMdJSDsJI9Ki9Wk624XEzf9JEKtuD0AO9IeyxP/0lXYVfkLBA9BH8U5bcaRXE/MatsB5cq7YcmzzkYUpnuFkU7AAGYp/sp1c8+R1cOiHN+TsipJTKsZFuJ0TDcELCu+JWhjhtcR+g1pYR64+xx4uwqeocg0GKXrYpSLSn4nfANvJfe+SWxjrInyC5Ftwh6KHXIoirK7Www5y37nk+gi3kfwQpijaELUosrrhPoCe1/XkzkXNLRbn0uE6TjADuvNbKazHm3UgfImgi/CIHP1prxFZWFUofpvDcRiHFlu3iM8S9xLWQI74ES9bkl2FN5LzCtbDPdBr90cxCWS38bteyY1m/gyxumm9hpOw6bI2O6OgJaKNjfYVd5GZNfPaRxyFk6azYcHTxF33MXYWNlJNHIdBL5N/Q51eAassQl7SsYSNtDqsR90x2BmS1NNgDLTPULe1BS0csaVjC4cNzJ5B63sevnDZJb00mDvHodgeIpZ0IsKWJZCodFmEk+x02YRLSOeZ04vome1Kab6swiWkzyJ8tSKFQ9J6eqhhv6AJ4bcVK2yk93PUvvqBy5az7EsiShdLxaTCvh205acdtnXIdz7tsG8HbflV1+FFKjnRKuegZFAAAAAASUVORK5CYII=) no-repeat;z-index:2;}
 ::-webkit-input-placeholder {color:#ccc;font-size:14.5px;font-style:italic;}
 </style>
 <body>
 <div class="container">
-<div class="search_wrap">
-<form action="http://m.baidu.com/s" method="get" target="_blank">
-<div class="search_inner"><input type="search" placeholder="Search..." value="" autocomplete="off" autocorrect="off" maxlength="64" name="word" class="inp"></div>
-<button class="btn" type="submit"></button>
-</form>
-</div>
+
 <div class="p"></div>
   <section class="mod_box">
     <div class="site_nav">
 	<ul class="clearfix">
+	  <li><a href="http://www.crsay.com" target="_blank">KUKA</a></li>
+	  <li><a href="http://bbs.wuyou.com/" target="_blank">无忧</a></li>
+	  <li><a href="http://bbs.weiphone.com/forum.php?mod=forumdisplay&fid=526&mobile=2" target="_blank">威锋</a></li>
+	  <li><a href="http://bbs.feidee.com/" target="_blank">金蝶</a></li>
 
-	  <li><a href="http://github.com/" target="_blank">GitHub</a></li>
-	  <li><a href="http://grub4dos-chenall.googlecode.com" target="_blank">Grub4Dos</a></li>
-	  <li><a href="http://m.dnspod.cn/" target="_blank">Dnspod</a></li>
-	  <li><a href="https://mail.rexian.net.cn:3333/admin/login/" target="_blank">RxMail</a></li>
+	  <li><a href="http://wapbaike.baidu.com/" target="_blank">百科</a></li>
+ 	  <li><a href="http://192.168.8.254/" target="_blank">路由</a></li>
+	  <li><a href="http://www.guomao96.com/" target="_blank">国贸</a></li>
+	  <li><a href="m2.html" target="_self">更多</a></li>
 
-	  <li><a href="http://m.gmail.com/" target="_blank">Gmail</a></li>
-	  <li><a href="http://smart.mail.163.com/" target="_blank">163</a></li>
-	  <li><a href="http://m.mail.qq.com/" target="_blank">QQmail</a></li>
-	  <li><a href="http://html5.mail.10086.cn/" target="_blank">139</a></li>
+	</ul>
+    </div>
+  </section>
+<div class="p"></div>
 
-	  <li><a href="http://wap.icbc.com.cn/" target="_blank">工行</a></li>
-	  <li><a href="http://m.cmbchina.com/" target="_blank">招行</a></li>
-	  <li><a href="http://m.alipay.com/" target="_blank">支付宝</a></li>
- 	  <li><a href="http://m.jd.com/" target="_blank">京东</a></li>
-	  <!--li><a href="http://m.hao123.com/n/v/yinhang?z=2" target="_blank">更多</a></li-->
+    <section class="mod_box">
+    <div class="site_nav3">
+	<ul class="clearfix">
+	  <li><a href="http://m.google.com/" target="_blank">Google</a></li>
+	  <li><a href="http://www.google.com/gwt/n" target="_blank">GWT</a></li>
 
-	  <li><a href="http://wap.10086.cn/" target="_blank">移动</a></li>
-	  <li><a href="http://waphb.189.cn/" target="_blank">电信</a></li>
-	  <li><a href="http://wap.10010.com/" target="_blank">联通</a></li>
-	  <li><a href="http://wvs.m.taobao.com/?sprefer=p23596" target="_blank">充值</a></li>
-
-	  <li><a href="http://wap.ip138.com/post.html" target="_blank">邮编</a></li>
-	  <li><a href="http://wap.ip138.com/sim.html" target="_blank">手机号</a></li>
-	  <li><a href="http://wap.ip138.com/id.html" target="_blank">身份证</a></li>
-	  <li><a href="http://wap.ip138.com/ip.html" target="_blank">IP地址</a></li>
-
-	  <li><a href="http://m.hao123.com/a/tianqi?z=2" target="_blank">天气</a></li>
-	  <li><a href="http://m.cnpm25.cn/pm/wuhan.html" target="_blank">PM2.5</a></li>
-	  <li><a href="http://tools.iask.cn/iask/tools/s.php?tmpl=phonenum&pos=63&vt=4" target="_blank">常用电话</a></li>
-	  <li><a href="http://m.kuaidi100.com/" target="_blank">快递</a></li>
-
-	  <li><a href="http://touch.qunar.com/h5/flight/" target="_blank">机票</a></li>
-	  <li><a href="http://3g.trip8080.com/" target="_blank">汽运</a></li>
- 	  <li><a href="http://m.8684.cn/hc" target="_blank">火车</a></li>
-   	  <li><a href="http://wap.tieyou.com/index_yupiao.html" target="_blank">余票</a></li>
-
-
-	  <li><a href="http://m.8684.cn/wuhan_bus" target="_blank">公交</a></li>
-	  <li><a href="http://m.8684.cn/wuhan_dt" target="_blank">地铁</a></li>
-	  <li><a href="http://dp.sina.cn/dpool/tools/citytraffic/index.php?city=%E6%AD%A6%E6%B1%89&vt=4&type=setindex" target="_blank">路况</a></li>
-	  <li><a href="http://touch.qunar.com/h5/hotel/" target="_blank">酒店</a></li>
-
-	  <li><a href="http://3g.sina.com.cn/iask/tv/index.php?p=0&serial=389019020.453&vt=4&city=%E6%B9%96%E5%8C%97" target="_blank">电视</a></li>
-	  <li><a href="http://m.mtime.cn/#!/theater/561/cinema/" target="_blank">电影</a></li>
 	  <li><a href="http://translate.google.cn/m/translate" target="_blank">翻译</a></li>
-	  <li><a href="http://stock1.sina.cn/prog/wapsite/stock/v2/cnypj.php?pos=63&vt=4" target="_blank">汇率</a></li>
 
-	  <li><a href="http://3g.sina.com.cn/" target="_blank">Sina</a></li>
-	  <li><a href="http://m.hao123.com" target="_blank">Hao123</a></li>
-	  <li><a href="http://m.2345.com" target="_blank">2345</a></li>
-	  <li><a href="http://m.waps.cn/" target="_blank">waps</a></li>
+	  <li><a href="http://www.nbdaili.com/" target="_blank">代理1</a></li>
+	  <li><a href="http://taobaofou.com/" target="_blank">代理2</a></li>
+	  <li><a href="http://www.shutude.com/" target="_blank">代理3</a></li>
 
 	</ul>
     </div>
   </section>
 </div>
-<footer class="footer">Copyright m.crsay.com</footer>
+<div class="p"></div>
+
+    <section class="mod_box">
+    <div class="site_nav3">
+	<ul class="clearfix">
+	  <li><a href="http://www.rexian.net.cn/" target="_blank">房产</a></li>
+	  <li><a href="http://bbs.rexian.net.cn/" target="_blank">论坛</a></li>
+	  <li><a href="http://www.wuhan.net.cn/" target="_blank">热线</a></li>
+
+	  <li><a href="http://59.175.137.11" target="_blank">59.175</a></li>
+	  <li><a href="http://58.49.59.69/" target="_blank">58.49</a></li>
+	  <li><a href="http://202.103.24.116/" target="_blank">24.116</a></li>
+	</ul>
+    </div>
+  </section>
+</div>
+
+<div class="search_wrap">
+<form action="https://www.google.com.hk/search" method="get" name="gs">
+<div class="search_inner"><input type="search" placeholder="Google Search..." value="" autocomplete="off" autocorrect="off" maxlength="64" name="q" class="inp"></div>
+<button class="btn" type="submit"></button>
+</form>
+</div>
+
 </body></html>
